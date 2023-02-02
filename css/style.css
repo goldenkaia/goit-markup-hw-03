@@ -268,11 +268,17 @@ body {
   margin-top: 72px;
 }
 
+
+
 /*--filter-list--*/
 .filter-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 /*--filter-button--*/
@@ -287,7 +293,7 @@ body {
 .filter-button:focus {
   background: var(--ocean-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+ 
 }
 
 /*--filter-text-button--*/
@@ -299,6 +305,9 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--iris-color);
+  background-color: var(--cloud-color);
+  border: 1px solid var(--cornflower-color);
+  padding: 12px 24px;
 
 }
 
@@ -328,7 +337,25 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+ 
+  padding-top: 32px;
+  padding-bottom: 8px;
+  
+}
+.person-name {
+  padding-top: 32px;
+  padding-bottom: 8px;
   text-align: center;
+}
+
+.job-name {
+padding-bottom: 32px;
+padding-top: 8px;
+}
+
+.card-wrapper {
+
+  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
 }
 
 /*--paragraph--*/
@@ -359,9 +386,7 @@ body {
 
 }
 
-
-
-/*--page-footer--*/
+/*---------page-footer------------*/
 .page-footer {
   background: var(--navy-blue-color);
   padding-top: 100px;
@@ -385,7 +410,6 @@ body {
 
 /*--paragraph-footer--*/
 .paragraph-footer {
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -403,24 +427,39 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2E2F42;
+  margin-bottom: 8px;
 
 }
 
 /*--card-description--*/
 .card-description {
-
-
-  font-weight: 400;
+font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-
+ 
 }
 
 /*--------------project-cards-list-----------*/
 .project-cards-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
+}
+
+.project-card-item {
+  background-color: var(--body-background-color);
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.project-card-item-wrap {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
+.card-border {
+  border-left: 1px solid var(--cornflower-color);
+  border-right: 1px solid var(--cornflower-color);
+  border-bottom: 1px solid var(--cornflower-color);
 }
