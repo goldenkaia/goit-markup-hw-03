@@ -11,159 +11,212 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <!--Navigation-->
-      <nav class="page-navigation">
-        <!--Logo-->
-        <a href="./index.html" class="link logo-one">Web<span class="logo-two-dark">Studio</span></a>
-        <ul class="menu list">
-          <li class="menu-item"><a class="menu-link link" href="./index.html">Studio</a></li>
-          <li class="menu-item"><a class="menu-link link current" href="./portfolio.html">Portfolio</a></li>
-          <li class="menu-item"><a class="menu-link link" href="./index.html">Contacts</a></li>
-        </ul>
-      </nav>
-      <!--Contacts-->
-      <address class="address">
-        <ul class="list">
-          <li><a class="email-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="phone-number link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-        </ul>
-      </address>
+      <div class="container header-container">
+        <!--Navigation-->
+        <nav class="page-navigation">
+          <!--Logo-->
+          <a href="./index.html" class="link logo-one"
+            >Web<span class="logo-two-dark">Studio</span></a
+          >
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!--Contacts-->
+        <address class="address">
+          <ul class="list contact-items">
+            <li>
+              <a class="email-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="phone-number link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
+
     <main>
       <section>
-        <h1 class="visually-hidden">Project cards</h1>
-        <!--Filters-->
-        <ul class="filter-list">
-          <li><button type="button" class="filter-button filter-text-button">All</button></li>
-          <li><button type="button" class="filter-button filter-text-button">Web Site</button></li>
-          <li><button type="button" class="filter-button filter-text-button">App</button></li>
-          <li><button type="button" class="filter-button filter-text-button">Design</button></li>
-          <li><button type="button" class="filter-button filter-text-button">Marketing</button></li>
-        </ul>
-        <!--Project Cards-->
-        <ul class="list">
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/banking-app.jpg"
-              alt="Banking App Interface Concept"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Banking App Interface Concept</h2>
-            <p class="card-description">App</p>
-          </a>
-          </li>
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/cashless-payment.jpg"
-              alt="Cashless Payment"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Cashless Payment</h2>
-            <p class="card-description">Marketing</p>
-          </a>
-          </li>
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/meditaion-app.jpg"
-              alt="Meditaion App"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Meditaion App</h2>
-            <p class="card-description">App</p>
-          </a>
-          </li>
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/taxi-service.jpg"
-              alt="Taxi Service"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Taxi Service</h2>
-            <p class="card-description">Marketing</p>
-          </a>
-          </li>
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/screen-illustrations.jpg"
-              alt="Screen Illustrations"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Screen Illustrations</h2>
-            <p class="card-description">Design</p>
-          </a>
-          </li>
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/online-courses.jpg"
-              alt="Online Courses"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Online Courses</h2>
-            <p class="card-description">Marketing</p>
-          </a>
-          </li>
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/instagram-stories.jpg"
-              alt="Instagram Stories Concept"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Instagram Stories Concept</h2>
-            <p class="card-description">Design</p>
-          </a>
-          </li>
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/organic-food.jpg"
-              alt="Organic Food"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Organic Food</h2>
-            <p class="card-description">WebSite</p>
-          </a>
-          </li>
-          <li class="project-card-item">
-            <a href="" class="link portfolio-card-link">
-            <img
-              src="./images/fresh-coffee.jpg"
-              alt="Fresh Coffee"
-              width="360"
-              height="300"
-            />
-            <h2 class="card-title">Fresh Coffee</h2>
-            <p class="card-description">WebSite</p>
-          </a>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="visually-hidden">Project cards</h1>
+          <!--Filters-->
+          <ul class="filter-list">
+            <li>
+              <button type="button" class="filter-button filter-text-button">
+                All
+              </button>
+            </li>
+            <li>
+              <button type="button" class="filter-button filter-text-button">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button type="button" class="filter-button filter-text-button">
+                App
+              </button>
+            </li>
+            <li>
+              <button type="button" class="filter-button filter-text-button">
+                Design
+              </button>
+            </li>
+            <li>
+              <button type="button" class="filter-button filter-text-button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <!--Project Cards-->
+          <ul class="project-cards-list list">
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/banking-app.jpg"
+                  alt="Banking App Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Banking App Interface Concept</h2>
+                <p class="card-description">App</p>
+              </a>
+            </li>
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/cashless-payment.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Cashless Payment</h2>
+                <p class="card-description">Marketing</p>
+              </a>
+            </li>
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/meditaion-app.jpg"
+                  alt="Meditaion App"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Meditaion App</h2>
+                <p class="card-description">App</p>
+              </a>
+            </li>
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/taxi-service.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Taxi Service</h2>
+                <p class="card-description">Marketing</p>
+              </a>
+            </li>
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/screen-illustrations.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Screen Illustrations</h2>
+                <p class="card-description">Design</p>
+              </a>
+            </li>
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/online-courses.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Online Courses</h2>
+                <p class="card-description">Marketing</p>
+              </a>
+            </li>
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/instagram-stories.jpg"
+                  alt="Instagram Stories Concept"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Instagram Stories Concept</h2>
+                <p class="card-description">Design</p>
+              </a>
+            </li>
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/organic-food.jpg"
+                  alt="Organic Food"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Organic Food</h2>
+                <p class="card-description">WebSite</p>
+              </a>
+            </li>
+            <li class="project-card-item">
+              <a href="" class="link portfolio-card-link">
+                <img
+                  src="./images/fresh-coffee.jpg"
+                  alt="Fresh Coffee"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="card-title">Fresh Coffee</h2>
+                <p class="card-description">WebSite</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <a href="./index.html" class="link logo-one">Web<span class="logo-two-light">Studio</span></a>
-      <p class="paragraph-footer">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <div class="footer-container">
+        <a href="./index.html" class="link logo-one"
+          >Web<span class="logo-two-light">Studio</span></a
+        >
+        <p class="paragraph-footer">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
+      </div>
     </footer>
   </body>
 </html>
+ 
