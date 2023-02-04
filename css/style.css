@@ -59,13 +59,15 @@ body {
   padding: 120px 0px;
 }
 
+
 .header-container {
   display: flex;
   align-items: center;
   padding-bottom: 24px;
   padding-top: 24px;
-
+  border-bottom: 1px solid var(--cornflower-color);
 }
+
 
 .page-navigation {
   display: flex;
@@ -76,6 +78,7 @@ body {
   display: flex;
 }
 
+/*--address--*/
 .address {
   font-style: normal;
   margin-left: auto;
@@ -108,7 +111,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--navy-blue-color);
-  margin-right: 76px;
+  padding-right: 76px;
+  /*---is it right?---*/
 
 }
 
@@ -133,12 +137,7 @@ body {
 }
 
 .menu-link.current {
-  color: var(--ocean-color)
-}
-
-/*--address--*/
-.address {
-  font-style: normal;
+  color: var(--ocean-color);
 }
 
 /*--email-link*/
@@ -147,7 +146,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--slate-color);
   margin-left: auto;
 
 }
@@ -163,7 +162,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--slate-color);
 }
 
 .phone-number:is(:hover, :focus) {
@@ -197,7 +196,6 @@ body {
 
 /*--modal-button--*/
 .modal-button {
-  background: var(--iris-color);
   border-radius: 4px;
   border: none;
 }
@@ -205,8 +203,6 @@ body {
 .modal-button:hover,
 .modal-button:focus {
   background: var(--ocean-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 /*--text-button--*/
@@ -219,7 +215,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--body-background-color);
+  background: var(--iris-color);
   display: block;
 }
 
@@ -227,9 +225,15 @@ body {
 /*----------features-list-----------*/
 .features {
   padding: 0;
+  /*-------add padding top and bottom. is it right?------*/
+  padding-top: 120px;
+
 }
 
 .what-are-we-doing {}
+
+/*------here's padding bottom only-----*/
+/*----space btw elements is no padding------*/
 
 
 .features-list {
@@ -246,11 +250,9 @@ body {
 .par-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--slate-color);
 
 }
-
-
 /*-----------Our-team----------*/
 
 .our-team {
@@ -262,13 +264,13 @@ body {
 .photo-list-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  background: var(--body-background-color);
 
 }
 
 /*-----------what-are-we-doing------------*/
 .directions {
   display: flex;
-
   gap: 24px;
 }
 
@@ -285,8 +287,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+
+  /*------top and buttom no padding-------*/
+
 }
 
 /*--filter-button--*/
@@ -301,13 +305,13 @@ body {
 .filter-button:focus {
   background: var(--ocean-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+  border-color: transparent;
 }
 
 /*--filter-text-button--*/
 .filter-text-button {
 
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -345,14 +349,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+  margin-bottom: 8px;
 
-  padding-top: 32px;
-  padding-bottom: 8px;
-
+  /*-------there's no padding top, at the bottom no padding-----*/
 }
 
 .person-name {
-  padding-top: 8px;
+
   text-align: center;
 }
 
@@ -364,7 +367,7 @@ body {
 
 .photo-wrap {
   padding: 32px 16px;
-  box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
+
 }
 
 
@@ -376,7 +379,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--slate-color);
 
 
 }
@@ -391,7 +394,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  color: #2E2F42;
+  color: var(--navy-blue-color);
   padding-bottom: 72px;
 
 }
@@ -420,17 +423,19 @@ body {
 
 /*--paragraph-footer--*/
 .paragraph-footer {
-  font-weight: 400;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #E7E9FC;
+  color: var(--cornflower-color);
   margin-top: 16px;
 
 }
 
 .portfolio {
   padding-bottom: 120px;
+  padding-top: 96px;
+  /*------------padding top was missing------------*/
 }
 
 /*--card-title--*/
@@ -440,10 +445,8 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2E2F42;
+  color: var(--navy-blue-color);
   margin-bottom: 8px;
-
-
 }
 
 /*--card-description--*/
@@ -452,7 +455,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--slate-color);
 }
 
 /*--------------project-cards-list-----------*/
