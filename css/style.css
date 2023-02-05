@@ -112,7 +112,7 @@ body {
   text-transform: uppercase;
   color: var(--navy-blue-color);
 
-  
+
 
 }
 
@@ -229,11 +229,9 @@ body {
 
 }
 
-.what-are-we-doing {}
-
-/*------here's padding bottom only-----*/
-/*----space btw elements is no padding------*/
-
+.what-are-we-doing {
+  padding-bottom: 120px;
+}
 
 .features-list {
   display: flex;
@@ -252,6 +250,7 @@ body {
   color: var(--slate-color);
 
 }
+
 /*-----------Our-team----------*/
 
 .our-team {
