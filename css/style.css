@@ -39,6 +39,10 @@ button {
 .link {
   text-decoration: none;
 }
+.link:hover,
+.link:focus {
+  color: var(--ocean-color);
+}
 
 body {
   font-family: 'Roboto', sans-serif;
