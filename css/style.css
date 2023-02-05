@@ -55,17 +55,16 @@ body {
   margin-right: auto;
 }
 
-.section {
-  padding: 120px 0px;
+.page-header {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom: 1px solid var(--cornflower-color);
 }
-
 
 .header-container {
   display: flex;
   align-items: center;
-  padding-bottom: 24px;
-  padding-top: 24px;
-  border-bottom: 1px solid var(--cornflower-color);
+
 }
 
 
@@ -76,6 +75,7 @@ body {
 
 .menu {
   display: flex;
+  margin-left: 76px;
 }
 
 /*--address--*/
@@ -111,8 +111,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--navy-blue-color);
-  padding-right: 76px;
-  /*---is it right?---*/
+
+  
 
 }
 
@@ -172,7 +172,7 @@ body {
 
 
 /*--page-header--*/
-.page-header {
+.hero {
   background: var(--navy-blue-color);
   padding-top: 188px;
   padding-bottom: 188px;
@@ -224,8 +224,7 @@ body {
 
 /*----------features-list-----------*/
 .features {
-  padding: 0;
-  /*-------add padding top and bottom. is it right?------*/
+  padding-bottom: 120px;
   padding-top: 120px;
 
 }
